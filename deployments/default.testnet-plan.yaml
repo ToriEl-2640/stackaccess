@@ -1,0 +1,39 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://stacks-node-api.testnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: bounty
+            expected-sender: STXTSXPE44Z891D58H2HMT2KMK16ENF7ERJGD1V1
+            cost: 911752
+            path: contracts/bounty.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: disability-credential
+            expected-sender: STXTSXPE44Z891D58H2HMT2KMK16ENF7ERJGD1V1
+            cost: 913882
+            path: contracts/disability-credential.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: emergency-fund
+            expected-sender: STXTSXPE44Z891D58H2HMT2KMK16ENF7ERJGD1V1
+            cost: 915356
+            path: contracts/emergency-fund.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: marketplace-escrow
+            expected-sender: STXTSXPE44Z891D58H2HMT2KMK16ENF7ERJGD1V1
+            cost: 914701
+            path: contracts/marketplace-escrow.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.05"
