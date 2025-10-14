@@ -1,0 +1,15 @@
+[project]
+name = "stacksaccess"
+description = "Bitcoin-powered disability benefits platform"
+
+[contracts.disability-credential]
+path = "contracts/disability-credential.clar"
+
+[contracts.marketplace-escrow]
+path = "contracts/marketplace-escrow.clar"
+
+[contracts.emergency-fund]
+path = "contracts/emergency-fund.clar"
+
+[contracts.bounty]
+path = "contracts/bounty.clar"
